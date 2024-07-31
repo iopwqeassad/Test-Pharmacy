@@ -17,74 +17,41 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body class="">
+<body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary mb-2">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="assets/images/logo/Elb-logo.png" width="130px" height="auto"
-                        alt="Logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                الأدوية
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">أدوية العين و الأذن</a></li>
-                                <li><a class="dropdown-item" href="#">أدوية الأطفال </a></li>
-                                <li><a class="dropdown-item" href="#">المعدة و القولون</a></li>
-                            </ul>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">منتجات طبيعية</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">مستلزمات طبية</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">العناية بالبشرة</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">العناية بالبشرة</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">الأم و الطفل </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">الصحة الجنسية </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="icon-login">
-                    <a href="#" class="login-lin">
-                        <i class="fa-solid fa-user ms-2"></i>
-                        تسجيل الدخول</a>
-                </div>
-            </div>
-        </nav>
-        <!-- Search -->
+    <!-- NavBar Start -->
+    <nav class="navbar navbar-expand-lg bg-body-white">
         <div class="container">
-            <div class="search-bar-container  mb-2 ">
-                <div class="d-flex justify-content-around">
-                    <input type="text" class="form-control  search-input" placeholder="البحث عن الأدوية">
-                    <div class="market-basket">
-                        <a href="#"><i class="fas fa-shopping-basket "></i></a>
-                        <span class="badge badge-pill badge-danger">3</span>
-                    </div>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo/Elb-logo.png" alt="Image">
+            </a>
+            <div class="marquee">
+                <span>صيدلية الباز للأدوية و المستلزمات الطبية</span>
+            </div>
+            <div class="Login">
+                <a href="login.html" class="d-flex justify-content-center align-items-center">
+                    <i class="fa-regular fa-circle-user fa-xl ms-3"></i>
+                    <h5 class="">تسجيل الدخول</h5>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Search -->
+    <div class="container">
+        <div class="search-bar-container  mb-2 mt-2 ">
+            <div class="d-flex justify-content-around">
+                <input type="text" class="form-control  search-input" placeholder="البحث عن الأدوية">
+                <div class="market-basket">
+                    <a href="#"><i class="fas fa-shopping-basket "></i></a>
+                    <span class="badge badge-pill badge-danger">3</span>
                 </div>
             </div>
         </div>
-        <!-- Search End -->
-    </header>
-
+    </div>
+    <!-- Search End -->
+    <!-- NavBar Start End-->
 
 
     <!-- Carosuel Start -->
@@ -128,7 +95,6 @@
 
     </div>
 
-    <!-- Carosuel End -->
 
 
     <!-- Important  Alert  -->
@@ -140,6 +106,13 @@
             </p>
         </div>
     </div>
+    <!-- Important  Alert End  -->
+
+
+
+
+
+
 
 
 
@@ -209,11 +182,9 @@
 
         </div>
     </div>
-    <!-- Category Section -->
-
+    <!-- Category Section End -->
 
     <!-- Swiper container -->
-
     <div class="container mt-3">
         <h4 class="header-extra mb-4 position-relative">أدوية مهمة لكل بيت</h4>
         <br class="breakLine">
@@ -223,7 +194,7 @@
                 <!-- Product cards -->
                 <div class="swiper-slide">
                     <div class="card">
-                        <a href="#"><img src="assets/images/Products/4.png" class="card-img-top" alt="products"></a>
+                        <a href="productdetails.html"><img src="assets/images/Products/4.png" class="card-img-top" alt="products"></a>
                         <div class="card-body">
                             <h5 class="card-title text-center">دواء كذا</h5>
                             <p class="card-text">دا وصف الدواء</p>
@@ -238,7 +209,7 @@
                 <!-- Product cards -->
                 <div class="swiper-slide">
                     <div class="card">
-                        <a href="#"><img src="assets/images/Products/4.png" class="card-img-top" alt="products"></a>
+                        <a href="productdetails.html"><img src="assets/images/Products/6.png" class="card-img-top" alt="products"></a>
                         <div class="card-body">
                             <h5 class="card-title text-center">دواء كذا</h5>
                             <p class="card-text">دا وصف الدواء</p>
@@ -252,7 +223,7 @@
                 <!-- Product cards -->
                 <div class="swiper-slide">
                     <div class="card">
-                        <a href="#"><img src="assets/images/Products/4.png" class="card-img-top" alt="products"></a>
+                        <a href="productdetails.html"><img src="assets/images/Products/8.png" class="card-img-top" alt="products"></a>
                         <div class="card-body">
                             <h5 class="card-title text-center">دواء كذا</h5>
                             <p class="card-text">دا وصف الدواء</p>
@@ -266,7 +237,7 @@
                 <!-- Product cards -->
                 <div class="swiper-slide">
                     <div class="card">
-                        <a href="#"><img src="assets/images/Products/4.png" class="card-img-top" alt="products"></a>
+                        <a href="productdetails.html"><img src="assets/images/Products/14.png" class="card-img-top" alt="products"></a>
                         <div class="card-body">
                             <h5 class="card-title text-center">دواء كذا</h5>
                             <p class="card-text">دا وصف الدواء</p>
@@ -280,7 +251,7 @@
                 <!-- Product cards -->
                 <div class="swiper-slide">
                     <div class="card">
-                        <a href="#"><img src="assets/images/Products/4.png" class="card-img-top" alt="products"></a>
+                        <a href="productdetails.html"><img src="assets/images/Products/16.png" class="card-img-top" alt="products"></a>
                         <div class="card-body">
                             <h5 class="card-title text-center">دواء كذا</h5>
                             <p class="card-text">دا وصف الدواء</p>
@@ -294,13 +265,13 @@
                 <!-- Product cards -->
                 <div class="swiper-slide">
                     <div class="card">
-                        <a href="#"><img src="assets/images/Products/4.png" class="card-img-top" alt="products"></a>
+                        <a href="productdetails.html"><img src="assets/images/Products/11.png" class="card-img-top" alt="products"></a>
                         <div class="card-body">
                             <h5 class="card-title text-center">دواء كذا</h5>
                             <p class="card-text">دا وصف الدواء</p>
                             <p class="card-text text-center"><b>EGP 160</b></p>
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="btn btn-primary rounded">أضف الى العربة</a>
+                                <a href="#" class="btn btn-success rounded">أضف الى العربة</a>
                             </div>
                         </div>
                     </div>
@@ -310,9 +281,73 @@
 
         </div>
     </div>
+    <!-- Swiper container End -->
 
 
 
+    <!-- Banner Section -->
+    <div class="container mt-3 mb-3">
+        <h4 class="header-extra mb-4 position-relative">عروض</h4>
+        <br class="breakLine">
+        <div class="image-container">
+            <div class="row">
+                <div class="col-md col-12 mb-3">
+                    <a href="#"><img src="assets/images/slider/lYU6KxtpDnf381Fl35CE6KDfnfJZ5GSRbjtv1OHz.png"
+                            alt="Image 1"></a>
+                </div>
+                <div class="col-md col-12 mb-3">
+                    <a href="#"><img src="assets/images/slider/UMTNSELb2AO4LlL02PJ0M7oxtPqfa4FQkJ2OLm83.png"
+                            alt="Image 2"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Section End -->
+
+    <!-- ElBaz Ads  -->
+    <section class="hero-6 bg-dark d-flex align-items-center position-relative" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5">
+                    <div class="hero-content mb-lg-0 mb-md-5 mb-5 pb-lg-0 pb-md-5">
+                        <h1 class="text-light font-weight-medium mb-4 pb-1">تسوق الأدوية بكل سهولة!</h1>
+                        <p class="hero-6-sub-title mb-4 pb-2" style="font-size: 16px">مع الباز، يمكنك تسوق الأدوية من
+                            منزلك دون
+                            الحاجة لمغادرة راحتك. نحن نقدم لك منصة آمنة وسهلة الاستخدام، حيث يمكنك استعراض الأدوية
+                            وطلبها بكل سهولة.
+                            استمتع بتجربة تسوق سلسة مع توصيل سريع إلى باب منزلك.</p>
+                        <a class="btn btn-success" href="#">ابدأ التسوق الآن</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1 col-md-7">
+                    <img alt="hero" class="img-fluid rounded" src="assets/images/logo/adds.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ElBaz Ads End -->
+
+
+
+
+
+
+
+
+
+    <!--== Start Preloader Content ==-->
+    <div class="preloader-wrap">
+        <div class="preloader">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!--== End Preloader Content ==-->
 
     <!-- =============================================================================================================================== -->
 
@@ -327,7 +362,7 @@
 
 
     <script>
-       var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
             spaceBetween: 20,
             loop: true,
@@ -367,6 +402,7 @@
             }
         });
     </script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
