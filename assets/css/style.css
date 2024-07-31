@@ -1,0 +1,229 @@
+/* Font Alex 
+  -----------
+.alexandria-<uniquifier> {
+  font-family: "Alexandria", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+
+/* General Setting */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Alexandria", sans-serif;
+}
+
+
+/* Header */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+.navbar-brand img {
+  max-width: 130px;
+  height: auto;
+}
+.nav-link {
+  color: #333;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #007bff;
+}
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+.icon-login {
+  display: flex;
+  align-items: center;
+}
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+.login-link:hover {
+  color: #0056b3;
+}
+.search-bar-container {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+}
+.search-input {
+  border: 1px solid #ced4da;
+  border-radius: 20px;
+  padding-right: 40px;
+}
+.market-basket {
+  position: relative;
+  margin-right: 15px;
+}
+.market-basket a {
+  color: #333;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+.market-basket a:hover {
+  color: #007bff;
+}
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 50%;
+  padding: 0.25em 0.4em;
+  font-size: 0.75em;
+}
+@media (max-width: 991.98px) {
+  .navbar-nav {
+      margin-top: 10px;
+  }
+  .icon-login {
+      margin-top: 10px;
+  }
+}
+/* search Bar */
+
+/* Carosuel */
+.carousel-indicators .active {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+/* Carosuel at First*/
+
+.bg-light-blue {
+  background-color: #d9edf7;
+  /* Light blue background */
+}
+
+
+
+
+/* Start Alert Note */
+.important-note {
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+/* End Alert Note */
+.landing-details div {
+  text-align: center;
+}
+
+
+
+
+/* Category */
+
+.categories-section {
+  /* background-color: #ff0000; */
+  background-color: #f9f9f9;
+
+}
+
+.category-item img {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.category-item h2 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+  .category-item img {
+    max-width: 80px;
+  }
+}
+
+
+.header-extra {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.header-extra::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #075830;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+
+/* swiper */
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-container {
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+
+}
+
+
+.card {
+  width: 100%;
+  max-width: 18rem;
+  margin: 0 auto;
+  border: none;
+  border-radius: 10px;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+}
