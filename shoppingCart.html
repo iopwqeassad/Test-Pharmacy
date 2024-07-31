@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="صيدلية الباز للمستلزمات الطبيةو دلوقتى ممكن تقدر تطلب الدواء و انت فى البيت">
+    <meta name="keywords" content="الأدوية , العلاج , فيتامينات ">
+    <meta name="author" content="الباز جروب">
+
+    <title> تفاصيل المنتج </title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<style>
+            .shopping-product {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .quantity {
+            display: inline-flex;
+            align-items: center;
+        }
+        .quantity button {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            padding: 0 5px;
+        }
+        .quantity input {
+            width: 40px;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 2px;
+        }
+        .important-note-cart {
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin: 15px 0;
+        }
+        .delete-btn {
+            background: none;
+            border: none;
+            color: #dc3545;
+        }
+</style>
+
+</head>
+
+<body>
+
+    <!--== Start Preloader Content ==-->
+    <div class="preloader-wrap">
+        <div class="preloader">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!--== End Preloader Content ==-->
+
+    <!-- NavBar Start -->
+    <nav class="navbar navbar-expand-lg bg-body-white">
+        <div class="container d-flex justify-content-between nowrap">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo/Elb-logo.png" alt="Image">
+            </a>
+            <div class="Login ">
+                <a href="index.html"> العودة</a>
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar Start End-->
+
+
+    <!-- Empty Cart -->
+    <div class="cart-div first-step mt-5">
+        <div id="cart-all-content" class="container">
+            <div class="empty-cart text-center">
+                <div class="row">
+                    <div class="col-8 offset-md-4">
+                        <div class="cart-title d-flex align-items-center">
+                            <h5 class="header-extra">سلة التسوق</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="empty-content text-center">
+                    <div class="cart-animation">
+                        <img src="assets/images/Alert/cart.png" class="cart-img" width="200" height="auto"
+                            alt="empty-icon">
+                    </div>
+                    <h4 class="text-nowrap mt-4">عربة التسوق فارغة</h4>
+                    <a href="index.html" class="btn btn-success p-2 mt-3 text-nowrap">
+                        ابدا التسوق الان
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Full CArt -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <div class="d-flex align-items-center  ">
+                                    <img src="assets/images/Products/5.png" class="img-fluid me-5 rounded-circle"
+                                        style="width: 80px; height: 80px;" alt="">
+                                </div>
+                            </th>
+                            <td>
+                                <p class="mb-0 mt-4">فيتامين</p>
+                            </td>
+                            <td>
+                                <p class="mb-0 mt-4">150 جنية</p>
+                            </td>
+                            <td>
+                                <div class="input-group quantity mt-4" style="width: 100px;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-minus rounded-circle bg-light border"
+                                            aria-label="Minus">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm text-center border-0"
+                                        value="1">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-plus rounded-circle bg-light border"
+                                            aria-label="Plus">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn btn-md   mt-4" aria-label="delete product">
+                                    <i class="fa-solid fa-trash" style="color: #ed9292;"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-between align-items-center maxWidthButtons">
+                <a href="shop.html" class="btn btn-dark text-nowrap cart-go-shopping-page" role="button">
+                    <i class="fa-regular fa-circle-left pe-1"></i>
+                    العودة للتسوق
+                </a>
+                <button class="btn btn-dark text-nowrap cart-go-shopping-page " aria-label="Delete All">
+                    <i class="fa-solid fa-trash pe-1"></i>
+                    مسح الكل
+                </button>
+                <div class="cart-totalprice-page d-flex align-items-center">
+                    <p>إجمالى السعر : <strong>150 جنية</strong></p>
+                </div>
+            </div>
+            <hr>
+            <div class="d-grid col-6 mx-auto">
+                <a href="checkout.html" class="go-check-out-btn btn btn-success  text-nowrap">
+                    اتمام الشراء
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="list-cart-products">
+            <div class="shopping-product shipping-header">
+                <div class="d-flex align-items-center">
+                    <img width="42" height="42" src="assets/images/logo/favicon.png">
+                    <div>
+                        <span>التوصيل في خلال 1-2 ساعة</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shopping-product">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img src="assets/images/Products/26.png" width="150" height="auto" alt="Omegal Man" class="img-fluid rounded-3">
+                    </div>
+                    <div class="col">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="mb-0">اوميجال مان مكمل  </h6>
+                            <div class="d-flex align-items-center">
+                                <div class="quantity me-3">
+                                    <button class="minus">-</button>
+                                    <input type="text" value="1" disabled>
+                                    <button class="plus">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-evenly">
+                        <span class="price">450 جنيه</span>
+                        <button class="delete-btn">
+                            <i class="fa-solid fa-trash" style="color: #ed9292;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="shopping-product">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img src="assets/images/Products/26.png" width="150" height="auto" alt="Omegal Man" class="img-fluid rounded-3">
+                    </div>
+                    <div class="col">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="mb-0">اوميجال مان مكمل  </h6>
+                            <div class="d-flex align-items-center">
+                                <div class="quantity me-3">
+                                    <button class="minus">-</button>
+                                    <input type="text" value="1" disabled>
+                                    <button class="plus">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-evenly">
+                        <span class="price">450 جنيه</span>
+                        <button class="delete-btn">
+                            <i class="fa-solid fa-trash" style="color: #ed9292;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="shopping-product">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img src="assets/images/Products/26.png" width="150" height="auto" alt="Omegal Man" class="img-fluid rounded-3">
+                    </div>
+                    <div class="col">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="mb-0">اوميجال مان مكمل  </h6>
+                            <div class="d-flex align-items-center">
+                                <div class="quantity me-3">
+                                    <button class="minus">-</button>
+                                    <input type="text" value="1" disabled>
+                                    <button class="plus">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-evenly">
+                        <span class="price">450 جنيه</span>
+                        <button class="delete-btn">
+                            <i class="fa-solid fa-trash" style="color: #ed9292;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="invoice-details mt-4">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>رسوم التوصيل</td>
+                            <td> 10 جنيه</td>
+                        </tr>
+                        <tr class="table-active">
+                            <td>المجموع</td>
+                            <td>1215 جنيه</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <a href="index.html" class="btn btn-dark text-nowrap cart-go-shopping-page" role="button">
+                    <i class="fa-regular fa-circle-left pe-1"></i>
+                    العودة للتسوق
+                </a>
+                <button class="btn btn-dark text-nowrap cart-go-shopping-page " aria-label="Delete All">
+                    <i class="fa-solid fa-trash "></i>
+                    مسح الكل
+                </button>
+                <div class="cart-totalprice-page d-flex align-items-center">
+                    <a href="#" class="btn btn-success text-nowrap ">إتمام الشراء</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- =============================================================================================================================== -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
